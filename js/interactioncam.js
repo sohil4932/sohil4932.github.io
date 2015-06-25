@@ -25,7 +25,7 @@
   var img = new Image(),
       imgwidth = 150,
       imgheight = 150;
-  img.src = 'intel.png';
+  img.src = 'icon.png';
 
   var email = new Text();
 
