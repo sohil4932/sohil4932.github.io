@@ -121,6 +121,7 @@
                 }
               }
           });
+      console.log("You are Here!!!");
       setstate('uploaded');
       reshoot();
     } 
