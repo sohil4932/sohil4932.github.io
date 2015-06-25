@@ -93,39 +93,38 @@
     data = canvas.toDataURL('image/jpeg', 0.9).replace(head, '');
     console.log(email);
 
-    if (location.hostname.indexOf('localhost')!== -1) {
-      $.ajax({
-            type: "POST",
-            url: "https://mandrillapp.com/api/1.0/messages/send.json",
-            data: {
-              'key': 'B6bSMmQ85PvY1CIAOws09Q' ,
-              'message': {
-                'from_email': 'sohil@motwanijadeja.org',
-                'to': [
-                    {
-                      'email': email,
-                      'name': '',
-                      'type': 'to'
-                    }
-                  ],
-                'autotext' : 'true',
-                'subject' : 'Thank You : Here is your image',
-                'html' : 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!',
-                'images': [
+    $.ajax({
+          type: "POST",
+          url: "https://mandrillapp.com/api/1.0/messages/send.json",
+          data: {
+            'key': 'B6bSMmQ85PvY1CIAOws09Q' ,
+            'message': {
+              'from_email': 'sohil@motwanijadeja.org',
+              'to': [
                   {
-                      "type": "image/jpeg",
-                      "name": "ClickedImage",
-                      "content": data
+                    'email': email,
+                    'name': '',
+                    'type': 'to'
                   }
-                ]
+                ],
+              'autotext' : 'true',
+              'subject' : 'Thank You : Here is your image',
+              'html' : 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!',
+              'images': [
+                {
+                    "type": "image/jpeg",
+                    "name": "ClickedImage",
+                    "content": data
                 }
+              ]
               }
-          });
-      console.log("You are Here!!!");
-      setstate('uploaded');
-      reshoot();
+            }
+        });
+    console.log("You are Here!!!");
+    setstate('uploaded');
+    reshoot();
     } 
-  }
+
   
  function setstate(newstate) {
     state = newstate;
