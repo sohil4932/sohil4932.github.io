@@ -95,7 +95,7 @@
 
     $.ajax({
           type: "POST",
-          url: "https://mandrillapp.com/api/1.0/messages/send.json",
+          url: "http://mandrillapp.com/api/1.0/messages/send.json",
           data: {
             'key': 'B6bSMmQ85PvY1CIAOws09Q' ,
             'message': {
