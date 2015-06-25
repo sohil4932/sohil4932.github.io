@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Intel PhotoBooth</title>
+<link rel="stylesheet" href="css/interactioncam.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+<body>
+  <header>
+    <h1>Interaction cam</h1>
+    <p>This is a simple photo app, just press space to take a photo.</p>
+    <p>Then click the appropriate buttons to re-take the photo or upload it to the web. You can also use the left arrow to re-shoot or right arrow to upload.</p>
+    <p>Press SPACE to start the show!</p>
+  </header>
+  <div class="media">
+    <div id="videocontainer">
+      <video id="video"></video>
+    </div>
+    <canvas id="canvas"></canvas>
+  </div>
+  <div id="controls"> 
+    <button class="btn btn-primary btn-lg" id="resetbutton">Uh, let's try that again</button>
+    <button class="btn btn-primary btn-lg" id="uploadbutton">Win! Send this!</button>
+  </div>
+  <div id="email">
+    <div class="input-group input-group-lg" id="emailtext">
+      <span class="input-group-addon" id="sizing-addon1">@</span>
+      <input type="email" id="emailvalue" class="form-control" placeholder="me@example.com" aria-describedby="sizing-addon1">
+    </div>
+    <button class="btn btn-primary btn-lg" id="clickbutton">CLICK PHOTO</button>
+  </div>
+<!--   <footer>
+    <p>
+      Written by <a href="http://twitter.com/codepo8">Chris Heilmann</a> - 
+      <a href="https://github.com/codepo8/interaction-cam">Fork on GitHub</a>
+    </p>
+  </footer> -->
+  <audio src="snap.wav"></audio>
+  <!-- http://www.freesound.org/people/thecheeseman/sounds/51360/ -->
+  <audio src="rip.wav"></audio>
+  <!-- http://www.freesound.org/people/aboe/sounds/68900/ -->
+  <audio src="takeoff.wav"></audio>
+  <!-- http://www.freesound.org/people/duckduckpony/sounds/130508/ -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/interactioncam.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
