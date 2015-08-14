@@ -10,7 +10,7 @@
       
  var ctx    = canvas.getContext('2d'),
      streaming    = false,
-     width  = 640,
+     width  = 600,
      height = 450,
      state  = 'intro';
 
@@ -147,7 +147,6 @@
   }, false);
 
   document.getElementById('uploadbutton').addEventListener('click', function() {
-
     if (state === 'reviewing') {
     downloadCanvas(this, 'canvas', 'selfie.png');
     }
