@@ -31,7 +31,7 @@ video {
 }
 #videocontainer, canvas {
   position: absolute;
-  width: 600px;
+  width: 640px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -136,6 +136,16 @@ header p {
   border-radius: 10px;
   padding: 10px 20px;
 }
+
+#controls #uploadbutton {
+  background: #0c0;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  width: 48%;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
 #uploaded a {
   color: #fff;
 }
@@ -159,14 +169,6 @@ header p {
    /*-o-animation: flash 1s;*/
       -ms-animation: flash 1s;
           animation: flash 1s;
-}
-
-#email #emailtext {
-  border: none;
-  font-size: 18px;
-  color: #fff;
-  width: 100%;
-  padding: 10px 20px;
 }
 
 #email #clickbutton {
