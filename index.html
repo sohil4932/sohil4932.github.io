@@ -1,34 +1,292 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>#SaluteSelfie</title>
-<link rel="stylesheet" href="css/interactioncam.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<meta charset="UTF-8">
+	<title>Intel Tech Challange</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+		<script src="js/parallax.min.js"></script>
+	<script src="js/index.js"></script>
 </head>
 <body>
-  <div class="media">
-    <div id="videocontainer">
-      <video id="video"></video>
-    </div>
-    <canvas id="canvas"></canvas>
-  </div>
-  <div id="controls"> 
-    <a id="resetbutton">Uh, let's try that again</a>
-    <a id="uploadbutton" >Win! Download this!</a>
-  </div>
-  <div id="email">
-    <h1>#SaluteSelfie</h1>
-    <button class="btn btn-primary btn-lg" id="clickbutton">CLICK PHOTO</button>
-  </div>
-  <audio src="snap.wav"></audio>
-  <!-- http://www.freesound.org/people/thecheeseman/sounds/51360/ -->
-  <audio src="rip.wav"></audio>
-  <!-- http://www.freesound.org/people/aboe/sounds/68900/ -->
-  <audio src="takeoff.wav"></audio>
-  <!-- http://www.freesound.org/people/duckduckpony/sounds/130508/ -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="js/interactioncam.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+	<div class="site-wrapper">
+		<div id="banner">
+			<div class="wrapper">
+<!-- 				<img src="images/circuit-board.jpg" id="ideathon-image">
+ -->				<div class="text">
+					<h4>Intel Tech Challange <font style="font-size:18px;font-family:open_sansregular;">presents</font></h4>
+					<h4>Online Ideathon</h4>
+					<h6>“The human kind has transformed into the most advanced stage we have ever lived.”</h6>
+					<h6>Online Ideathon is a National Level innovation in education program for secondary and higher secondary school students with a focus on building Technology and Computational Skills.
+</h6>
+					<a href="https://docs.google.com/forms/d/1P_QViaQz07v3AZrwnjMcyd65g7t1xUaPm7j4ij_mtE4/edit?pli=1#" target="_blank" id="register-btn">Register Now</a>
+				</div>
+				<div class="arrow"></div>
+			</div>
+		</div>
+		<div id="about-us">
+			<div class="wrapper">
+				<div class="title"><h2>What is Online Ideathon?</h2></div>
+				<div class="desc">
+					<div class="pull-left">
+						<img src="./images/children.png" alt="Ideathon">
+					</div>
+					<div class="pull-right">
+								Online Ideathon is a National Level innovation education program for school students who have the zeal to create
+
+using the Intel Galileo Board.  
+
+Your ideas have to be submitted by 31st of September 2015. If your idea gets selected you shall be called up for 
+
+mentoring camps.  You shall be given the Galileo boards for implementation of your ideas.
+
+The shortlisted projects will be Showcased at  National Science Fair - Intel® TECH Challenge – INDIA in December 
+
+2015 Winners from National Fair may even get a chance to represent India at – Intel® Science and Engineering Fair 
+
+held in the USA.
+					</div>
+					
+				</div>
+				<div class="btn-groups">
+					<a href="#" class="student btn">Student</a> 
+					<a href="#" class="teacher btn">Teacher</a>
+				</div>
+			</div>
+		</div>
+		<div id="student-section" >				
+			<div class="wrapper">
+				<div class="title"><h2>Online Ideathon for students</h2></div>
+				<div class="level-container">
+					<div class="filter-group">
+						<ul>
+							<li class="active">
+								Beginners Level
+							</li>
+							<li>
+								Advanced Level
+							</li>
+						</ul>
+					</div>
+					<div>
+							<ul class="resource">
+								<li>
+									<div class="name"><a href="https://docs.google.com/presentation/d/1uQu3HjFwA1klFkZcwvgTJnytFxkGMNr
+2g-flZDzpTFs/edit#slide=id.p4" target="_blank">Ideathon Guide</a></div>
+									<div class="desc">Here’s a presentation to take you on a journey of ideas and innovations … ideas that changed the life as we knew it and innovations that are going to make life better for future gens!</div>
+								</li>
+							</ul>
+						</div>
+
+					<div class="cards-beginner cards">
+												<ul>
+							<li><div class="card">
+								<div class="card-image">
+									<img src="./images/start.jpg" alt="">
+								</div>
+								<div class="content">
+								<div class="card-title">
+									<a href="https://software.intel.com/en-us/iot/library/galileo-getting-started" target="_blank">Getting started with Galileo</a>
+								</div>
+								<div class="card-desc">
+									Start making things with these step-by-step instructions, examples, and code samples.
+								</div>
+								</div>
+							</div>
+						</li>
+						
+						
+							<li><div class="card">
+								<div class="card-image">
+									<img src="./images/what1.png" alt="">
+								</div>
+								<div class="content">
+								<div class="card-title">
+									<a href="https://drive.google.com/a/eyuva.com/file/d/0B5Kk3WsQxwe1d2JqN2R1UDNCZUk/view" target="_blank">I’ll Make Infinity </a>
+								</div>
+								<div class="card-desc">
+									A project made by fellow school kid that will show you how to blink LEDs and play with them using Galileo Board.								</div>
+							</div>
+							</div>
+						</li>
+						
+
+							<li><div class="card">
+								<div class="card-image">
+									<img src="./images/feature.jpg" alt="">
+								</div>
+								<div class="content">
+								<div class="card-title">
+									<a href="http://www.intel.com/content/www/us/en/do-it-yourself/project-gallery.html#meet" target="_blank">Get Inspired </a>
+								</div>
+								<div class="card-desc">
+									Get inspired to build what’s next. See what others are doing with Intel Edison technology.
+								</div>
+							</div>
+							</div>
+						</li>
+
+							<li><div class="card">
+								<div class="card-image">
+									<img src="./images/feature1.jpg" alt="">
+								</div>
+								<div class="content">
+								<div class="card-title">
+									<a href="http://makezine.com/2013/10/03/10-great-intel-galileo-features/" target="_blank">10 Great Features of Intel Galileo</a>
+								</div>
+								<div class="card-desc">
+									The Galileo is a remarkable invention by Intel and Arduino, the board works perfectly well with the Arduino ecosystem and its features will lead to groundbreaking Innovations.
+								</div>
+							</div>
+							</div>
+						</li>
+
+							
+						</ul>
+					</div>
+						<div class="cards-advanced cards">
+						<ul>
+							
+							<li><div class="card">
+								<div class="card-image">
+									<img src="./images/processor.jpg" alt="">
+								</div>
+								<div class="content">
+								<div class="card-title">
+									<a href="https://www-ssl.intel.com/content/www/us/en/embedded/products/galileo/galileo-overview.html" target="_blank">Intel’s best processor ever </a>
+								</div>
+								<div class="card-desc">
+									The Intel® Galileo Gen 2 development board is a microcontroller board based on the Intel® Quark™ SoC X1000 application processor, a 32-bit Intel® Pentium® brand system on a chip (SoC).
+								</div>
+							</div>
+							</div>
+						</li>
+							<li><div class="card">
+								<div class="card-image">
+									<img src="./images/grover.jpg" alt="">
+								</div>
+								<div class="content">
+								<div class="card-title">
+									<a href="http://www.seeedstudio.com/depot/Grove-starter-kit-plus-Intel-IoT-Edition-for-Intel-Galileo-Gen-2-and-Edison-p-1978.html" target="_blank">Grover Starter Kit for Intel Galileo</a>
+								</div>
+								<div class="card-desc">
+									Grove Starter Kit Plus - Intel IoT Edition for Intel Galileo Gen 2 Developer Kit is a complete hardware & software solution to help you explore the IoT space and create innovative projects.								</div>
+							</div>
+							</div>
+						</li>
+							<li><div class="card">
+								<div class="card-image">
+									<img src="./images/diy.jpg" alt="">
+								</div>
+								<div class="content">
+								<div class="card-title">
+									<a href="http://www.intorobotics.com/14-diy-robot-projects-reveal-power-intel-galileo/" target="_blank">14 DIY robot projects that reveal the power of Intel Galileo</a>
+								</div>
+								<div class="card-desc">
+									The best way to celebrate the Intel Galileo board is to learn about its applications and see it in action in a variety of projects. From an insect robot controllable wirelessly to a humanoid robot, Galileo can do it all.								</div>
+							</div>
+							</div>
+						</li>
+							<li><div class="card">
+								<div class="card-image">
+									<img src="./images/photo.jpg" alt="">
+								</div>
+								<div class="content">
+								<div class="card-title">
+									<a href="http://www.instructables.com/id/How-to-shoot-timelapse-video-with-the-Intel-Galile/" target="_blank">How to shoot timelapse-video with the Intel Galileo</a>
+								</div>
+								<div class="card-desc">
+									Shoot a timelapse-video with the Intel Galileo Gen 2 or a similar board. We will use a 2.5mm jack to connect the board to a Canon DSLR and then control the shutter with our board.								</div>
+							   </div>
+							   </div>
+						</li>
+							</div>
+							</div>
+						</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="teacher-section">
+			<div class="wrapper">
+				<div class="title"><h2>Online Ideathon for Teachers</h2></div>
+					<div class="level-container">
+							<ul class="resource">
+									<li>
+									<div class="name"><a href="https://drive.google.com/file/d/0B5Kk3WsQxwe1ODlYZTlXdjBIcXc/view?usp=sharing" target="_blank">Teacher’s Guide to Intel Galileo </a></div>
+									<div class="desc">A self-help guide developed to support you in introducing the Intel® Galileo Development Board into the classroom.</div>
+								</li>
+							</ul>
+
+					<div class=" cards">
+						<ul>
+							<li><div class="card">
+								<div class="card-image">
+									<img src="./images/content.jpg" alt="">
+								</div>
+								<div class="content">
+								<div class="card-title">
+									<a href="http://www.intel.com/content/www/us/en/library/viewmore.results.html?prTag=rintelproduct:inteldesktopboardsandkits/intelgalileoboardsandkits" target="_blank">Intel Content Library</a>
+								</div>
+								<div class="card-desc">
+									A great tool for quickly prototyping simple interactive designs or for tackling more complex projects.
+								</div>
+							</div>
+							</div>
+						</li>
+						<li><div class="card">
+								<div class="card-image">
+									<img src="./images/classroom.jpg" alt="">
+								</div>
+								<div class="content">
+								<div class="card-title">
+									<a href="http://dom.cimafranca.com/pmwiki.php/IntelGalileo/IntelGalileo" target="_blank">Infusing Maker Culture in Classroom</a>
+								</div>
+								<div class="card-desc">
+									Training Materials and Learning Resources. Notes to teachers on how to use the Intel Galileo as a learning tool.
+								</div>
+							</div>
+							</div>
+						</li>
+						<li><div class="card">
+								<div class="card-image">
+									<img src="./images/12.jpg" alt="">
+								</div>
+								<div class="content">
+								<div class="card-title">
+									<a href="https://learn.sparkfun.com/inteltour" target="_blank">Case Studies</a>
+								</div>
+								<div class="card-desc">
+									A great tool for quickly prototyping simple interactive designs or for tackling more complex projects.
+								</div>
+							</div>
+							</div>
+						</li>
+							<li><div class="card">
+								<div class="card-image">
+									<img src="./images/4545.jpg" alt="">
+								</div>
+								<div class="content">
+								<div class="card-title">
+									<a href="https://drive.google.com/file/d/0B5Kk3WsQxwe1ODlYZTlXdjBIcXc/view?usp=sharing" target="_blank">A Teacher's Guide to Intel Galileo Board</a>
+								</div>
+								<div class="card-desc">
+									Teachers need to be equipped with the knowledge and ability to incorporate electronics and computer science into their classrooms in creative and applicable ways to prepare a highly technical workforce. 
+								</div>
+							</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+					</div>
+			</div>		
+		</div>
+		<footer>
+			<div class="text">Get update from Us	<a href="https://www.facebook.com/pages/Intel-Tech-Challenge-India/1638834146400051?refid=17" target="_blank"><img src="images/fb-icon.png" alt=""></a></div>
+		</footer>
+	</div>
+	
 </body>
 </html>
