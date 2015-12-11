@@ -87,6 +87,14 @@ section{
 	padding-bottom: 10px;
 	min-height: 70px;
 }
+#footer .border-right{
+	border-right: 1px solid;
+	border-color: #808080;
+}
+#footer .border-left{
+	border-left: 1px solid;
+	border-color: #808080;
+}
 /*#footer img{
 	display: inline-block;
     vertical-align: middle;
