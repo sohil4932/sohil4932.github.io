@@ -46,3 +46,61 @@ h6, .h6{
 section{
 	padding: 25px 0px;
 }
+
+.vertical-center{
+	display: table-cell;
+	vertical-align: middle;
+}
+.vertical-center-parent{
+	height: 100%;
+}
+.no-padding{
+	padding: 0px;
+}
+
+#footer{
+	width: 100%;
+	position: fixed;
+	min-height: 90px;
+	color: #fff;
+	font-weight: 700;
+	background-color: #fff;
+	bottom: 0px;
+	font-size: 20px;
+	text-align: center;
+}
+.img-menu{
+	width: 50px;
+}
+.img-middle {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 5px;
+}
+.col-sm-15{
+	width: 12.5%;
+}
+
+#footer .col-sm-2{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-height: 70px;
+}
+/*#footer img{
+	display: inline-block;
+    vertical-align: middle;
+	margin-top: auto;
+	margin-bottom: auto;
+}*/
+
+.img-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex; /* add */
+    justify-content: center; /* add to align horizontal */
+    align-items: center; /* add to align vertical */
+}
