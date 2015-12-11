@@ -4,11 +4,14 @@
 	<link rel="stylesheet" type="text/css"  href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css"  href="css/custom-style.css">
+
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css"/>
 	<title>Sohil Patel</title>
 </head>
 <body>
+<div id="fullpage">
 	<nav id="header">
 		<div class="row">
 			<div class="col-sm-12 text-center img-container no-padding">
@@ -33,7 +36,7 @@
 			</div>
 		</div>		
 	</nav>
-	<section class="no-padding content-section first-section">
+	<div id="section0" class="section active no-padding content-section first-section">
 		<div class="row">
 			<div class="col-sm-12 no-padding">
 				<div class="col-sm-6 section-image-half">
@@ -51,8 +54,8 @@
 				</div>
 			</div>
 		</div>
-	</section>
-	<section class="no-padding content-section">
+	</div>
+	<div id="section1" class="section no-padding content-section">
 		<div class="row">
 			<div class="col-sm-12 no-padding">
 				<div class="col-sm-6 section-half">
@@ -79,11 +82,21 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</div>
 </body>
+
 	<script type="text/javascript" src="js/lib/jquery.1.11.1.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lib/modernizr.custom.js"></script>
     <script type="text/javascript" src="js/lib/classie.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/lib/jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage();
+		});
+	</script>
 </html>
