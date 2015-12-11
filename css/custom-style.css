@@ -1,0 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+body, html{
+	font-family: 'Open Sans', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: #fff;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+a{
+	font-size: 16px;
+	font-weight: normal;
+}
+h1, .h1{
+	font-size: 36px;
+	font-weight: 400 !important;
+}
+h1.small{
+	font-size: 30px;
+}
+h2, .h2{
+	font-size: 26px;
+	font-weight: 300 !important;
+	line-height: 32px;
+}
+h3, .h3{
+	font-size: 24px;
+	font-weight: 300 !important;
+}
+h4, .h4{
+	font-size: 16px;
+	font-weight: 300!important;
+	line-height: 22px;
+}
+h5, .h5{
+	font-size: 20px;
+	font-weight: normal !important;
+}
+h6, .h6{
+	font-size: 14px;
+	font-weight: bold !important;
+}
+
+section{
+	padding: 25px 0px;
+}

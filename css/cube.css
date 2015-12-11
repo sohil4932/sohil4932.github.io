@@ -1,0 +1,449 @@
+/*Base
+  */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: 300;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+html {
+  height: 100%;
+  min-height: 100%;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.25;
+  color: #ffffff;
+}
+html,
+body {
+  overflow: hidden;
+}
+body {
+  background: #4285f4;
+}
+ul,
+ol {
+  list-style: none;
+}
+ul li,
+ol li {
+  list-style: inherit;
+}
+h1 {
+  font-size: 1.5em;
+  margin: 0 1rem 0.5em;
+}
+h2 {
+  font-size: 1.3em;
+  margin: 0 1rem 0.5em;
+}
+h3 {
+  font-size: 1.1em;
+  margin: 0 1rem 0.5em;
+}
+/*Frame
+ */
+body {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+body:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.canvas {
+  position: absolute;
+  height: 22.5rem;
+  width: 15rem;
+  overflow: visible;
+  top: 14em;
+  left: 50%;
+  margin-left: -7.5rem;
+  -webkit-perspective: 700px;
+          perspective: 700px;
+}
+.canvas:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.canvas:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+/*Forms
+ */
+::-moz-focus-inner {
+  outline: 0;
+}
+button {
+  line-height: 1;
+}
+button:focus {
+  outline: 0;
+}
+button {
+  margin: 0 1rem 1rem;
+  padding: 1em;
+  font-size: 0.6rem;
+  background: #2b4746;
+  border: 0.1rem solid #fff;
+  color: #fff;
+  box-shadow: none;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  font-variant: small-caps;
+}
+button:focus,
+button:hover {
+  color: #182727;
+  background: #fff;
+  border-color: #182727;
+}
+button:active {
+  color: #fff;
+  border-color: #182727;
+  background-color: #182727;
+}
+button:focus {
+  outline: 0;
+}
+button.selected {
+  color: #fff;
+  border-color: #182727;
+  background-color: #182727;
+}
+.controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 20rem;
+  z-index: 5;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  cursor: default;
+}
+/**
+ cubes
+ */
+.cube {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 400ms linear;
+  transition: -webkit-transform 400ms linear;
+  transition: transform 400ms linear;
+  transition: transform 400ms linear, -webkit-transform 400ms linear;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotate3d(0, 1, 0, -35deg) rotate3d(1, 0, 0, 35deg);
+          transform: rotate3d(0, 1, 0, -35deg) rotate3d(1, 0, 0, 35deg);
+}
+.cube .swiper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15rem;
+  width: 15rem;
+  outline-offset: 10px;
+  visibility: visible;
+}
+.cube .swiper.top {
+  -webkit-transform: rotate3d(0, 1, 0, -180deg) translate3d(0, 0, -7.89473684rem);
+          transform: rotate3d(0, 1, 0, -180deg) translate3d(0, 0, -7.89473684rem);
+}
+.cube .swiper.bottom {
+  -webkit-transform: translate3d(0, 0, -7.89473684rem);
+          transform: translate3d(0, 0, -7.89473684rem);
+}
+.cube .swiper.left {
+  -webkit-transform: rotate3d(0, 1, 0, 90deg) translate3d(0, 0, -7.89473684rem);
+          transform: rotate3d(0, 1, 0, 90deg) translate3d(0, 0, -7.89473684rem);
+}
+.cube .swiper.right {
+  -webkit-transform: rotate3d(0, 0, 1, -180deg) rotate3d(0, 1, 0, 90deg) translate3d(0, 0, -7.89473684rem);
+          transform: rotate3d(0, 0, 1, -180deg) rotate3d(0, 1, 0, 90deg) translate3d(0, 0, -7.89473684rem);
+}
+.cube .swiper.front {
+  -webkit-transform: rotate3d(1, 0, 0, -180deg) rotate3d(1, 0, 0, -90deg) translate3d(0, 0, -7.89473684rem);
+          transform: rotate3d(1, 0, 0, -180deg) rotate3d(1, 0, 0, -90deg) translate3d(0, 0, -7.89473684rem);
+}
+.cube .swiper.back {
+  -webkit-transform: rotate3d(0, 1, 0, -180deg) rotate3d(1, 0, 0, -90deg) translate3d(0, 0, -7.89473684rem);
+          transform: rotate3d(0, 1, 0, -180deg) rotate3d(1, 0, 0, -90deg) translate3d(0, 0, -7.89473684rem);
+}
+.cube-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15rem;
+  width: 15rem;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0;
+          transition-duration: 0;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  visibility: hidden;
+}
+.cube-part {
+  height: inherit;
+  width: inherit;
+}
+.cube-part .side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  line-height: 5rem;
+  text-align: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  border-radius: 0.6rem;
+}
+.cube-part .side.white,
+.cube-part .side.blue,
+.cube-part .side.orange,
+.cube-part .side.red,
+.cube-part .side.green,
+.cube-part .side.yellow {
+  background: #1e1e1e;
+}
+.cube-part .side.white .sticker,
+.cube-part .side.blue .sticker,
+.cube-part .side.orange .sticker,
+.cube-part .side.red .sticker,
+.cube-part .side.green .sticker,
+.cube-part .side.yellow .sticker {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  visibility: visible;
+}
+.cube-part .side.front {
+  -webkit-transform: translate3d(-2.5rem, 0, 0) rotate3d(0, 1, 0, -90deg) scale(1);
+          transform: translate3d(-2.5rem, 0, 0) rotate3d(0, 1, 0, -90deg) scale(1);
+}
+.cube-part .side.back {
+  -webkit-transform: translate3d(2.5rem, 0, 0) rotate3d(0, 1, 0, 90deg) scale(1);
+          transform: translate3d(2.5rem, 0, 0) rotate3d(0, 1, 0, 90deg) scale(1);
+}
+.cube-part .side.right {
+  -webkit-transform: translate3d(0, 2.5rem, 0) rotate3d(1, 0, 0, -90deg) scale(1);
+          transform: translate3d(0, 2.5rem, 0) rotate3d(1, 0, 0, -90deg) scale(1);
+}
+.cube-part .side.left {
+  -webkit-transform: translate3d(0, -2.5rem, 0) rotate3d(1, 0, 0, 90deg) scale(1);
+          transform: translate3d(0, -2.5rem, 0) rotate3d(1, 0, 0, 90deg) scale(1);
+}
+.cube-part .side.top {
+  -webkit-transform: translate3d(0, 0, 2.5rem) rotate3d(1, 0, 0, 0) scale(1);
+          transform: translate3d(0, 0, 2.5rem) rotate3d(1, 0, 0, 0) scale(1);
+}
+.cube-part .side.bottom {
+  -webkit-transform: translate3d(0, 0, -2.5rem) rotate3d(1, 0, 0, -180deg) scale(1);
+          transform: translate3d(0, 0, -2.5rem) rotate3d(1, 0, 0, -180deg) scale(1);
+}
+.cube-part-wrapper {
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  z-index: 0;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
+  pointer-events: none;
+  visibility: hidden;
+}
+.cube-part-wrapper[data-x="0"] {
+  left: 0;
+}
+.cube-part-wrapper[data-x="1"] {
+  left: 5rem;
+}
+.cube-part-wrapper[data-x="2"] {
+  left: 10rem;
+}
+.cube-part-wrapper[data-y="0"] {
+  top: 0;
+}
+.cube-part-wrapper[data-y="1"] {
+  top: 5rem;
+}
+.cube-part-wrapper[data-y="2"] {
+  top: 10rem;
+}
+.cube-part-wrapper[data-z="0"] {
+  -webkit-transform: translate3d(0, 0, -5rem);
+          transform: translate3d(0, 0, -5rem);
+}
+.cube-part-wrapper[data-z="1"] {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.cube-part-wrapper[data-z="2"] {
+  -webkit-transform: translate3d(0, 0, 5rem);
+          transform: translate3d(0, 0, 5rem);
+}
+/**
+crip
+ */
+.grip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  pointer-events: none;
+}
+.grip .axis {
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+.grip .axis.manual {
+  -webkit-transition: none;
+  transition: none;
+}
+.grip .axis.fast {
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+.axis {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+/**
+ Theme
+ */
+.theme-flat .cube-part-wrapper-112 .cube-part .side.white .sticker {
+  background-image: url('http://oizom.com/icons/android-chrome-48x48.png');
+  background-size: 100% auto;
+}
+.theme-flat .cube-part .side {
+  background: none;
+  border-radius: 0;
+}
+.theme-flat .cube-part .side.white .sticker,
+.theme-flat .cube-part .side.blue .sticker,
+.theme-flat .cube-part .side.orange .sticker,
+.theme-flat .cube-part .side.red .sticker,
+.theme-flat .cube-part .side.green .sticker,
+.theme-flat .cube-part .side.yellow .sticker {
+  -webkit-transform: translateZ(1px);
+          transform: translateZ(1px);
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+  right: 0.3rem;
+  bottom: 0.3rem;
+  border-radius: 0.3rem;
+  z-index: 2;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.theme-flat .cube-part .side.white .sticker {
+  background-color: #ffffff;
+}
+.theme-flat .cube-part .side.blue .sticker {
+  background-color: #0051ba;
+}
+.theme-flat .cube-part .side.orange .sticker {
+  background-color: #ff5800;
+}
+.theme-flat .cube-part .side.red .sticker {
+  background-color: #c41e3a;
+}
+.theme-flat .cube-part .side.green .sticker {
+  background-color: #009e60;
+}
+.theme-flat .cube-part .side.yellow .sticker {
+  background-color: #ffd500;
+}
+/**
+Theme
+ */
+.theme-realistic .cube-part-wrapper-112 .cube-part .side.white .sticker {
+  background-image: url('http://oizom.com/icons/android-chrome-48x48.png');
+  background-size: 100% auto;
+}
+.theme-realistic .cube-part .side {
+  visibility: visible;
+  box-shadow: 0 0 2px 0 #3f3f3f inset, 0 0 0 0.3rem #2b2b2b inset;
+  border-radius: 0.6rem;
+  background-color: #1e1e1e;
+}
+.theme-realistic .cube-part .side .sticker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0.6rem;
+  z-index: 2;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 2px 0 #3f3f3f inset, 0 0 0 0.3rem #2b2b2b inset, 0 0 1px 0.4rem rgba(255, 255, 255, 0.2) inset;
+  background-image: -webkit-radial-gradient(ellipse farthest-corner, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0));
+  background-image: radial-gradient(ellipse farthest-corner, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0));
+}
+.theme-realistic .cube-part .side.white .sticker {
+  background-color: #ffffff;
+}
+.theme-realistic .cube-part .side.blue .sticker {
+  background-color: #0051ba;
+}
+.theme-realistic .cube-part .side.orange .sticker {
+  background-color: #ff5800;
+}
+.theme-realistic .cube-part .side.red .sticker {
+  background-color: #c41e3a;
+}
+.theme-realistic .cube-part .side.green .sticker {
+  background-color: #009e60;
+}
+.theme-realistic .cube-part .side.yellow .sticker {
+  background-color: #ffd500;
+}
+.theme-realistic .cube-part .side.white .sticker,
+.theme-realistic .cube-part .side.blue .sticker,
+.theme-realistic .cube-part .side.orange .sticker,
+.theme-realistic .cube-part .side.red .sticker,
+.theme-realistic .cube-part .side.green .sticker,
+.theme-realistic .cube-part .side.yellow .sticker {
+  -webkit-transform: translateZ(1px);
+          transform: translateZ(1px);
+}
