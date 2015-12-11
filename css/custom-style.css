@@ -69,6 +69,18 @@ section{
 	font-size: 20px;
 	text-align: center;
 }
+#header{
+	width: 100%;
+	position: fixed;
+	min-height: 90px;
+	color: #fff;
+	font-weight: 700;
+	background-color: #fff;
+	top: 0px;
+	font-size: 20px;
+	border-bottom: 1px solid #808080;
+	text-align: center;
+}
 .img-menu{
 	width: 50px;
 }
@@ -87,11 +99,11 @@ section{
 	padding-bottom: 10px;
 	min-height: 70px;
 }
-#footer .border-right{
+.border-right{
 	border-right: 1px solid;
 	border-color: #808080;
 }
-#footer .border-left{
+.border-left{
 	border-left: 1px solid;
 	border-color: #808080;
 }
@@ -111,4 +123,51 @@ section{
     display: flex; /* add */
     justify-content: center; /* add to align horizontal */
     align-items: center; /* add to align vertical */
+}
+.section-image-half{
+	padding:0px;
+
+}
+.section-half{
+	padding: 25px;
+	border-right: 1px solid #808080;
+	border-left: 1px solid #808080;
+}
+.content-section{
+	width: 100%;
+	color: #808080;
+}
+.primary-black{
+	color: #1a1a1a;
+}
+.primary-gray{
+	color: #808080;
+}
+.secondary-black{
+	color: #333;
+}
+.primary-white{
+	color:#fff;
+}
+.first-section{
+	margin-top:91px;
+}
+.no-padding{
+
+}
+a{
+	font-size: 16px;
+	color: #4285f4;
+	text-decoration: none;
+}
+body{
+	overflow-x: hidden;
+}
+a:hover,
+a:focus,
+a:active{
+	text-decoration: none;
+	opacity: 0.7;
+	cursor: pointer;
+	color:#4285f4;
 }
