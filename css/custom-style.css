@@ -153,6 +153,7 @@ section{
     align-items: center; /* add to align vertical */
 }
 .section-image-half{
+	padding-top: 80px;
 	height: 100%;
 	padding-right: 0px;
 	padding-left: 0px;
@@ -236,28 +237,44 @@ a:active{
 	   margin-left: -(X/2)u;
 	   margin-top: -(Y/2)u;
 	}
+	.img-streach{
+		height:1024px;
+	}
 }
 
-.learner-ico:hover{
+.img-streach{
+	filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+}
+
+.img-streach:hover{
+	filter: none;
+	-webkit-filter: grayscale(0); 
+}
+
+.learner-ico:hover, .learner-ico.active{
 	background-color: #808080;
 }
 .learner-ico a img{
 	height: 50px;
 	width: 40px;
 }
-.maker-ico:hover{
+.maker-ico:hover, .maker-ico.active{
 	background-color:  #FFD812;
 }
-.researcher-ico:hover{
+.researcher-ico:hover, .researcher-ico.active{
 	background-color: #0CA267;
 }
-.coach-ico:hover{
+.coach-ico:hover, .coach-ico.active{
 	background-color: #C62742;
 }
-.coder-ico:hover{
+.coder-ico:hover, .coder-ico.active{
 	background-color: #145EBF;
 }
-.volunteer-ico:hover{
+.volunteer-ico:hover, .volunteer-ico.active{
 	background-color: #FF610E;
 }
 .volunteer-ico img, .coach-ico img{
