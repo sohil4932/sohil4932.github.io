@@ -693,10 +693,16 @@
         $(this).addClass('selected');
       });
 
-    $('.scrambler')
-      .on('click', function() {
+    // $('.scrambler')
+    //   .on('click', function() {
+        
+    //   });
+
+    $(document).ready(function(){
+      setTimeout(function(){
         scrambleCube(30);
-      });
+      }, 1000);
+    });
 
   });
 })(window.jQuery, window, document);
