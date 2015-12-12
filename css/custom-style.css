@@ -184,3 +184,19 @@ a:active{
 .margin-bottom-default{
 	margin-bottom: 25px;
 }
+
+/* center align vertically and horizontally div on your browser screen */
+.centered_div{
+	/* nothing to do here for normal screen machines */
+}
+@media (min-height: 800px){
+	.centered_div {
+	   width: Xu;
+	   height: Yu;
+	   position: absolute;
+	   top: 50%;
+	   left: 50%;
+	   margin-left: -(X/2)u;
+	   margin-top: -(Y/2)u;
+	}
+}
