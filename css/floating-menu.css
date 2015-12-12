@@ -21,9 +21,10 @@
 
 .floatingContainer {
   bottom: 10px;
-  right: 3.5%;
+  right: 3%;
   position: fixed;
 }
+
 .floatingContainer:hover .subActionButton {
   transition: opacity 1.2s;
 }
@@ -47,7 +48,7 @@
   width: 3em;
   margin: .5em;
   z-index: 1000;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 .actionButton .floatingText {
   color: #FFF;
@@ -106,7 +107,7 @@
   opacity: 1;
 }
 .actionButton:hover {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.14), 0 8px 16px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 5px 10px rgba(0, 0, 0, 0.5);  
 }
 
 .subActionButton {

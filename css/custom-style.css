@@ -257,3 +257,20 @@ a:active{
 .volunteer-ico img, .coach-ico img{
 	width: 60px;
 }
+.cube-div .floatingContainer{
+ 	left: 3%;
+}
+.cube-div .actionButton{
+
+}
+.dummyActionButton{
+	border-radius: 50%;
+	background-color: #3BADE9;
+	cursor: pointer;
+  height: 50px;
+  position: relative;
+  width:50px;
+  margin: .5em;
+  z-index: 1000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 5px 10px rgba(0, 0, 0, 0.5);
+}
