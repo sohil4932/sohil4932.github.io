@@ -101,6 +101,7 @@ section{
 }
 .img-menu{
 	width: 50px;
+	min-height: 50px;
 }
 .img-middle {
 	margin-left: auto;
@@ -229,4 +230,30 @@ a:active{
 	   margin-left: -(X/2)u;
 	   margin-top: -(Y/2)u;
 	}
+}
+
+.learner-ico:hover{
+	background-color: #ccc;
+}
+.learner-ico a img{
+	height: 50px;
+	width: 40px;
+}
+.maker-ico:hover{
+	background-color: #ddd;
+}
+.researcher-ico:hover{
+	background-color: #eee;
+}
+.coach-ico:hover{
+	background-color: #f3f3f3;
+}
+.coder-ico:hover{
+	background-color: #f8f8f8;
+}
+.volunteer-ico:hover{
+	background-color: #1a1a1a;
+}
+.volunteer-ico img, .coach-ico img{
+	width: 60px;
 }
