@@ -84,6 +84,11 @@ section{
 	border-bottom: 1px solid #808080;
 	text-align: center;
 }
+#header div.col-sm-2 {
+  height: 100%;
+  padding-top: 20px;
+  cursor: pointer;
+}
 .bottom-side-div{
 	width: 10%;
 	max-width: 10%;
@@ -234,26 +239,26 @@ a:active{
 }
 
 .learner-ico:hover{
-	background-color: #ccc;
+	background-color: #808080;
 }
 .learner-ico a img{
 	height: 50px;
 	width: 40px;
 }
 .maker-ico:hover{
-	background-color: #ddd;
+	background-color:  #FFD812;
 }
 .researcher-ico:hover{
-	background-color: #eee;
+	background-color: #0CA267;
 }
 .coach-ico:hover{
-	background-color: #f3f3f3;
+	background-color: #C62742;
 }
 .coder-ico:hover{
-	background-color: #f8f8f8;
+	background-color: #145EBF;
 }
 .volunteer-ico:hover{
-	background-color: #1a1a1a;
+	background-color: #FF610E;
 }
 .volunteer-ico img, .coach-ico img{
 	width: 60px;
