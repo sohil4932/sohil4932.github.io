@@ -59,7 +59,8 @@ section{
 }
 
 #footer{
-	width: 100%;
+	width: 80%;
+	margin-left: 10%;
 	position: fixed;
 	min-height: 90px;
 	color: #fff;
@@ -81,6 +82,22 @@ section{
 	font-size: 20px;
 	border-bottom: 1px solid #808080;
 	text-align: center;
+}
+.bottom-side-div{
+	width: 10%;
+	max-width: 10%;
+	min-height: 90px;
+	text-align: center;
+	display: block;
+	position: fixed;
+}
+.cube-div{
+	bottom: 0;
+	left: 0;
+}
+.avatar-div{
+	bottom: 0;
+	right: 0;
 }
 .img-menu{
 	width: 50px;
