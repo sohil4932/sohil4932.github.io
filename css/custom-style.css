@@ -131,7 +131,10 @@ section{
 	margin-top: auto;
 	margin-bottom: auto;
 }*/
-
+.img-stretch{
+	height: 60%;
+	width: 100%;
+}
 .img-container {
     position: absolute;
     top: 0;
@@ -143,11 +146,18 @@ section{
     align-items: center; /* add to align vertical */
 }
 .section-image-half{
-	padding:0px;
 	height: 100%;
+	padding-right: 0px;
+	padding-left: 0px;
 	border-right: 1px solid #808080;
 	border-left: 1px solid #808080;
-
+}
+.image-bg{
+	background-repeat: no-repeat;
+	background-repeat-y: no-repeat;
+}
+.maker-bg{
+	background: url(../img/maker.jpg);
 }
 .section-half{
 	height: 100%;
@@ -205,6 +215,9 @@ a:active{
 /* center align vertically and horizontally div on your browser screen */
 .centered_div{
 	/* nothing to do here for normal screen machines */
+}
+.img-full{
+	height: 100%;
 }
 @media (min-height: 800px){
 	.centered_div {
