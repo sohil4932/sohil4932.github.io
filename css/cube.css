@@ -351,7 +351,7 @@ crip
  Theme
  */
 .theme-flat .cube-part-wrapper-112 .cube-part .side.white .sticker {
-  background-image: url('http://oizom.com/icons/android-chrome-48x48.png');
+  background-image: url('../icons/cube_icon.png');
   background-size: 100% auto;
 }
 .theme-flat .cube-part .side {
@@ -398,7 +398,7 @@ crip
 Theme
  */
 .theme-realistic .cube-part-wrapper-112 .cube-part .side.white .sticker {
-  background-image: url('http://oizom.com/icons/android-chrome-48x48.png');
+  background-image: url('../icons/cube_icon.png');
   background-size: 100% auto;
 }
 .theme-realistic .cube-part .side {
