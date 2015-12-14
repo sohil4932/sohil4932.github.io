@@ -700,7 +700,7 @@
 
     $(document).ready(function(){
       setTimeout(function(){
-        scrambleCube(30);
+        scrambleCube(15);
       }, 1000);
     });
 
