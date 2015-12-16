@@ -319,3 +319,7 @@ a:active{
 .landing .subActionButton a i{
 	color: #3BADE9;
 }
+.drop-content{
+	margin-top: -30px !important;
+	font-weight: bold;	
+}
