@@ -310,3 +310,12 @@ a:active{
   z-index: 1000;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 5px 10px rgba(0, 0, 0, 0.5);
 }
+
+
+.landing .subActionButton{
+	background-color: #fff;
+	color: #3BADE9;
+}
+.landing .subActionButton a i{
+	color: #3BADE9;
+}
