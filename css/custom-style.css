@@ -324,6 +324,10 @@ a:active{
   z-index: 1000;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 5px 10px rgba(0, 0, 0, 0.5);
 }
+.dummyActionButton:hover{
+	background-color: #fff;
+}
+
 
 
 .landing .subActionButton{

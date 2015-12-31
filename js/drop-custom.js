@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var learnerDrop, makerDrop, researcherDrop, coderDrop, coachDrop, volunteerDrop;
+	var learnerDrop, makerDrop, researcherDrop, coderDrop, coachDrop, volunteerDrop, blogDrop;
 	learnerDrop = new Drop({
 	    target: document.querySelector('.learner-ico'),
 	    content: 'Learner',
@@ -36,4 +36,10 @@ $(document).ready(function(){
 	    position: 'top center',
 	    openOn: 'hover'
 	  });
+	blogDrop = new Drop({
+		target: document.querySelector('.dummyActionButton'),
+		content: 'Blog',
+		position: 'top center',
+		openOn: 'hover'
+	});
 });
