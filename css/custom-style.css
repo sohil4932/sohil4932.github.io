@@ -559,7 +559,8 @@ Nav Icons
 .mobile-display-block{
 	display: none;
 }
-@media (max-width: 500px){
+
+@media (max-width:500px){
 	.mobile-display-block{
 		display: block;
 	}
@@ -595,7 +596,7 @@ Nav Icons
 
 }
 
-@media (max-width: 500px){
+/*@media(max-width: 500px){
 	.mobile-display-none{
 		display: none;
 	}
@@ -608,4 +609,4 @@ Nav Icons
 	section{
 		font-size: 16px;
 	}
-}
+}*/
