@@ -679,17 +679,17 @@ codrops menu
 		padding: 25px 40px;
 	}
 	.img-float {
-	    height: 4em;
-		width: 4em;
+	    height: 3em;
+		width: 3em;
 	}
 	.actionButton{
-		height: 4em;
-		width: 4em;
+		height: 3em;
+		width: 3em;
 		background-color: transparent;
 	}
 	.subActionButton{
-		height: 4em;
-		width: 4em;
+		height: 3em;
+		width: 3em;
 	}
 	.subActionButton span a {
 		font-size: 1.3em;
@@ -700,7 +700,7 @@ codrops menu
 	#header {
 	    width: 100%;
 	    position: fixed;
-	    min-height: 80px;
+	    min-height: 70px;
 	    color: #fff;
 	    font-weight: 700;
 	    background-color: #3BADE9;
