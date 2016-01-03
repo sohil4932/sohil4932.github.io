@@ -673,6 +673,7 @@ codrops menu
 	}
 	.section-image-half{
 		height: auto;
+		padding-top: 60px;
 	}
 	.section-half{
 		height: auto;
