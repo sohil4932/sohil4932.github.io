@@ -693,7 +693,7 @@ codrops menu
 		width: 3em;
 	}
 	.subActionButton span a {
-		font-size: 1.3em;
+		font-size: 1em;
 	}
 	.dummyActionButton, #github-popup{
 		display: none !important;
