@@ -716,7 +716,7 @@ codrops menu
 		margin-left: 15px;
 	}
 	.landing a i{
-		margin-top: 8px;
+		margin-top: 15px;
 	}
 	.menu-collapsed{
 		display: block;
@@ -725,7 +725,7 @@ codrops menu
 		display: block;
 	}
 	.mobile-margin-top-100{
-		margin-top: 70px;
+		margin-top: 60px;
 	}
 }
 
