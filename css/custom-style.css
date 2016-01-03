@@ -703,6 +703,7 @@ codrops menu
 	    position: fixed;
 	    min-height: 60px;
 	    color: #fff;
+	    max-height: 60px;
 	    font-weight: 700;
 	    background-color: #3BADE9;
 	    top: 0px;
