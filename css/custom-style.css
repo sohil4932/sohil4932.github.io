@@ -254,6 +254,15 @@ a:active{
 	.mobile-display-none{
 		display: none;
 	}
+	.section-image-half{
+		height: auto !important;
+	}
+	.section-half{
+		height: auto !important;
+	}
+	section{
+		font-size: 16px;
+	}
 }
 
 .img-streach{
@@ -373,4 +382,34 @@ a.gray-link:active{
 }
 .popup-close:hover{
 	opacity: 0.75;
+}
+
+@media (min-width: 760px){
+	.section-image-half{
+		height: auto;
+	}
+	.section-half{
+		height: auto;
+		padding: 25px 40px;
+	}
+	.img-float {
+	    height: 10em;
+		width: 10em;
+	}
+	.actionButton{
+		height: 10em;
+		width: 10em;
+		background-color: transparent;
+	}
+	.subActionButton{
+		height: 10em;
+		width: 10em;
+	}
+	.subActionButton span a {
+		font-size: 4em;
+	}
+	.dummyActionButton, #github-popup{
+		display: none;
+	}
+
 }
