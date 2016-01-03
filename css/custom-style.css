@@ -278,26 +278,26 @@ a:active{
 	-webkit-filter: grayscale(0); 
 }
 
-.learner-ico:hover, .learner-ico.active{
+.learner-ico:hover, .learner-ico.active, .learner-menu{
 	background-color: #808080;
 }
 .learner-ico a img{
 	height: 50px;
 	width: 40px;
 }
-.maker-ico:hover, .maker-ico.active{
+.maker-ico:hover, .maker-ico.active, .maker-menu{
 	background-color:  #FFD812;
 }
-.researcher-ico:hover, .researcher-ico.active{
+.researcher-ico:hover, .researcher-ico.active, .researcher-menu{
 	background-color: #0CA267;
 }
-.coach-ico:hover, .coach-ico.active{
+.coach-ico:hover, .coach-ico.active, .coach-menu{
 	background-color: #C62742;
 }
-.coder-ico:hover, .coder-ico.active{
+.coder-ico:hover, .coder-ico.active, .coder-menu{
 	background-color: #145EBF;
 }
-.volunteer-ico:hover, .volunteer-ico.active{
+.volunteer-ico:hover, .volunteer-ico.active, .volunteer-menu{
 	background-color: #FF610E;
 }
 .volunteer-ico img, .coach-ico img{
@@ -560,6 +560,110 @@ Nav Icons
 	display: none;
 }
 
+/****************************************
+codrops menu
+****************************************/
+/* menu-overlay style */
+.menu-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 10000;
+	left: 0;
+	background: rgba(0,0,0,0.7);
+}
+.menu-overlay .btn{
+	font-size: 18px;
+}
+
+/* menu-overlay closing cross */
+.menu-overlay .menu-overlay-close {
+	font-size: 42px;
+	z-index: 10001;
+	color: #fff;
+	position: absolute;
+	right: 20px;
+	top:20px;
+}
+
+/* Menu style */
+.menu-overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 80%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.menu-overlay ul {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.menu-overlay ul li {
+	display: block;
+	width: 100%;
+	padding-top: 28px;
+	height: 20%;
+	height: calc(100% / 6);
+	min-height: 36px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.menu-overlay ul li a {
+	font-size: 24px;
+	font-weight: 400;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.menu-overlay ul li a:hover,
+.menu-overlay ul li a:focus {
+	color: #f0f0f0;
+}
+
+.scroll-menu{
+	position: absolute;
+}
+/* Effects */
+.menu-overlay-scale {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.menu-overlay-scale.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+
+@media screen and (max-height: 30.5em) {
+	.menu-overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.menu-overlay ul li {
+		min-height: 34px;
+	}
+}
+
 @media (max-width:500px){
 	.mobile-display-block{
 		display: block;
@@ -575,25 +679,47 @@ Nav Icons
 		padding: 25px 40px;
 	}
 	.img-float {
-	    height: 10em;
-		width: 10em;
+	    height: 4em;
+		width: 4em;
 	}
 	.actionButton{
-		height: 10em;
-		width: 10em;
+		height: 4em;
+		width: 4em;
 		background-color: transparent;
 	}
 	.subActionButton{
-		height: 10em;
-		width: 10em;
+		height: 4em;
+		width: 4em;
 	}
 	.subActionButton span a {
-		font-size: 4em;
+		font-size: 1.3em;
 	}
 	.dummyActionButton, #github-popup{
-		display: none;
+		display: none !important;
 	}
-
+	#header {
+	    width: 100%;
+	    position: fixed;
+	    min-height: 80px;
+	    color: #fff;
+	    font-weight: 700;
+	    background-color: #3BADE9;
+	    top: 0px;
+	    z-index: 9;
+	    font-size: 40px;
+	    border-bottom: 1px solid #808080;
+	    text-align: center;
+	}
+	.mobile-menu a, .mobile-menu a i {
+		color: #fff;
+		margin-left: 15px;
+	}
+	.menu-collapsed{
+		display: block;
+	}
+	.custom-collapse{
+		display: block;
+	}
 }
 
 /*@media(max-width: 500px){

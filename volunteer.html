@@ -33,7 +33,7 @@
 </head>
 <body>
 <div id="header">
-		<div class="row">
+		<div class="row mobile-display-none">
 			<div class="col-sm-12 text-center img-container no-padding">
 				<div class="col-sm-2 no-padding text-center learner-ico">
 					<a href="learner.html">
@@ -61,6 +61,36 @@
 				</div>
 			</div>
 		</div>		
+		<div class="row mobile-display-block mobile-menu">
+			<div class="col-sm-12 text-left">
+				<h2><a class="" href="blog.sohilpatel.org"><i class="fa fa-globe fa-2x"></i></a></h2>
+			</div>
+		</div>
+		<div>
+			<div class="menu-collapsed custom-collapse">
+		        <div id="nav-icon2">
+		          <span></span>
+		          <span></span>
+		          <span></span>
+		          <span></span>
+		          <span></span>
+		          <span></span>
+		        </div>
+		    </div>
+		    <div class="menu-overlay menu-overlay-scale custom-collapse">
+		        <span class="menu-overlay-close pull-right"><i class="ion-android-close"></i></span>
+		        <nav>
+		            <ul>
+		                <li class="learner-menu"><a href="larner.html"> learner </a>
+		                <li class="maker-menu"><a href="maker.html " class="">Maker</a></li>
+		                <li class="researcher-menu"><a href="researcher.html" class="">Researcher</a></li>
+		                <li class="coder-menu"><a href="coder.html " class="">Coder</a></li>
+		                <li class="coach-menu"><a href="coach.html" class="">Coach</a></li>
+		                <li class="volunteer-menu"><a href="volunteer.html" class="">Volunteer</a></li>
+		            </ul>
+		        </nav>
+		    </div>
+		</div>
 	</div>
 <div id="fullpage">
 	
@@ -185,6 +215,7 @@
 	<script src="js/lib/tether.min.js"></script>
 	<script src="js/lib/drop.min.js"></script>
 	<script src="js/drop-custom.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>	
 	<script type="text/javascript">
 		var isMobile = false; //initiate as false
    // device detection
